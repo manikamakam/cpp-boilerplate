@@ -1,5 +1,9 @@
+/** Copyright 2019 <Eashwar> <Sri Manika> 
+ */
+
 /** @file lib.h
- * @brief This file includes all the required headers and class definitions.
+ *  @brief This file includes all the required headers and class definitions.
+ *  @author Part 1: Sri Manika(Driver) Eashwar(Navigator)
  */
 
 #pragma once
@@ -7,7 +11,7 @@
 #include<iostream>
 
 /**
- * @brief PidController - Class to implement the PID Controller 
+ * @brief PidController - Class to implement the PID Controller
  */
 
 class PidController {
@@ -21,7 +25,7 @@ class PidController {
         double compute(double actual, double set);
     private:
         double Kp, Kd, Ki;
-        double error,prevError,integral,derivative,newVelocity,dt;
+        double error, prevError, integral, derivative, newVelocity, dt;
 };
 
 
