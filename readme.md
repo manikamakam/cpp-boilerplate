@@ -1,4 +1,8 @@
-# C++ Boilerplate
+
+# PID-controller
+=======
+# PID-controller
+>>>>>>> cbcdd876770b2531d65d14490339deb22acdda98
 [![Build Status](https://travis-ci.org/Eashwar-S/PID-controller.svg?branch=master)](https://travis-ci.org/Eashwar-S/PID-controller)
 [![Coverage Status](https://coveralls.io/repos/github/Eashwar-S/PID-controller/badge.svg?branch=master)](https://coveralls.io/github/Eashwar-S/PID-controller?branch=master)
 ---
