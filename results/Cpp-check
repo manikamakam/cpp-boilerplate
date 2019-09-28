@@ -1,0 +1,14 @@
+Run the command:
+cppcheck --enable=all --std=c++11 -I include/ --suppress=missingIncludeSystem $( find . -name *.cpp | grep -vE -e "^./build/" -e "^./vendor/" )
+
+Output:
+Checking app/PID-controller.cpp...
+[include/lib.h:13]: (style) The class 'PidController' does not have a constructor.
+1/4 files checked 18% done
+Checking app/main.cpp...
+2/4 files checked 33% done
+Checking test/PidControllerTest.cpp...
+3/4 files checked 86% done
+Checking test/main.cpp...
+4/4 files checked 100% done
+
