@@ -1,6 +1,6 @@
 # C++ Boilerplate
-[![Build Status](https://travis-ci.org/Eashwar-S/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/Eashwar-S/cpp-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/Eashwar-S/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/Eashwar-S/cpp-boilerplate?branch=master)
+[![Build Status](https://travis-ci.org/manikamakam/PID-controller.svg?branch=master)](https://travis-ci.org/manikamakam/PID-controller)
+[![Coverage Status](https://coveralls.io/repos/github/manikamakam/PID-controller/badge.svg?branch=master)](https://coveralls.io/github/manikamakam/PID-controller?branch=master)
 ---
 
 ## Overview
