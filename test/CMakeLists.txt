@@ -4,11 +4,10 @@ add_executable(
     cpp-test
     main.cpp
     PidControllerTest.cpp
+    ../app/PID-controller.cpp
 )
 
 target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include 
                                            ${CMAKE_SOURCE_DIR}/include)
 target_link_libraries(cpp-test PUBLIC gtest)
-#target_link_libraries(cpp-test PUBLIC libgtest.a)
-#target_link_libraries(cpp-test PUBLIC libgtest_main.a)
 
