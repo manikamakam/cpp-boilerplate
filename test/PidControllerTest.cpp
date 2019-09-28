@@ -16,7 +16,7 @@
  */        
 TEST(PidControllerTest, shouldPass) {  
     std::shared_ptr<PidController> velocityFinal (new PidController);
-    ASSERT_NEAR(245.9, velocityFinal-> compute(145.0,177.9),0.5);
+    ASSERT_NEAR(177.9, velocityFinal-> compute(145.0,177.9),0.5);
 }
 
 /** @brief This unit test checks that the retured new velocity is never zero.
