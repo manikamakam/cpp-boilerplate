@@ -5,5 +5,6 @@
 #include "lib.h"
 
 double PidController::compute(double actual, double set) {
-    return newVelocity;
+    //return newVelocity;
+    return 9.9;
 }
