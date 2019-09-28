@@ -1,15 +1,21 @@
-/** Copyright 2019 <Eashwar> <Sri Manika> 
+/** Copyright 2019 <Eashwar Sathyamurthy> <Sri Manika Makam> 
  */
 
 /** @file PID-controller.cpp
- * @brief This file provides the implementation of the compute method
- * @author Part 1: Sri Manika(Driver) Eashwar(Navigator)
+ *  @brief This file provides the implementation of the compute method
+ *  @author Part 1: Sri Manika Makam(Driver) Eashwar Sathyamurthy(Navigator)
  */
 
-#include "include/lib.h"
+#include "lib.hpp"
+
+void PidController::set() {
+  Kp = 0.01;
+  Kd = 0.2;
+  Ki = 0.1;
+  dt = 0.1;
+}
 
 double PidController::compute(double actual, double set) {
-/// Take kp=0.01, ki=0.2, kd=0.1
-return newVelocity;
+  return newVelocity;
 }
 

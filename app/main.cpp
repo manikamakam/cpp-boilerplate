@@ -1,13 +1,13 @@
-/** Copyright 2019 <Eashwar> <Sri Manika> 
+/** Copyright 2019 <Eashwar Sathyamurthy> <Sri Manika Makam> 
  */
 
 /** @file main.cpp
- * @brief This is the main application source file.
- * lib.h is included.
- * @author Part 1: Sri Manika(Driver) Eashwar(Navigator)
+ *  @brief This is the main application source file.
+ *  lib.hpp is included.
+ *  @author Part 1: Sri Manika Makam(Driver) Eashwar Sathyamurthy(Navigator)
  */
 
-#include "include/lib.h"
+#include "lib.hpp"
 
 int main() {
   return 0;

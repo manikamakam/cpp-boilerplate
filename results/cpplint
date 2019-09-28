@@ -4,8 +4,10 @@ cpplint $( find . -name \*.hpp -or -name \*.cpp | grep -vE -e "^./build/" -e "^.
 
 Output:
 
+Done processing ./include/lib.hpp
 Done processing ./test/PidControllerTest.cpp
 Done processing ./test/main.cpp
 Done processing ./app/main.cpp
 Done processing ./app/PID-controller.cpp
+
 

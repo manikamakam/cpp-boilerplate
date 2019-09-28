@@ -5,7 +5,7 @@
 ---
 
 ## Overview
-Part 1: Driver - Sri Manika Makam
+Part 1: Driver: Sri Manika Makam
         Navigator: Eashwar Sathyamurthy
 
 ## Standard install via command-line

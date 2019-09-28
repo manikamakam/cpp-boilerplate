@@ -1,13 +1,13 @@
-/** Copyright 2019 <Eashwar> <Sri Manika> 
+/** Copyright 2019 <Eashwar Sathyamurthy> <Sri Manika Makam> 
  */
 
 /** @file main.cpp
  *  @brief This file will run all test cases.
- *  @author Part 1: Sri Manika(Driver) Eashwar(Navigator)
+ *  @author Part 1: Sri Manika Makam(Driver) Eashwar Sathyamurthy(Navigator)
  */
 
 #include <gtest/gtest.h>
-#include "include/lib.h"
+#include "lib.hpp"
 
 int main(int argc, char** argv) {
   ::testing::InitGoogleTest(&argc, argv);
