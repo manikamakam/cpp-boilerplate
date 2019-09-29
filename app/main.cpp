@@ -9,19 +9,30 @@
  *
  */
 
-#include "lib.hpp"
 #include <iostream>
 #include <memory>
+#include "lib.hpp"
 
+/**
+ * @brief Main function
+ * @param none
+ * @return none
+ *
+ */
 int main() {
-	std::shared_ptr<PidController> pid(new PidController);
-	pid->set();
-	double actualVelocity = 40.0;
-	double desiredVelocity = 50.0;
-	std::cout << "Current Velocity: " << actualVelocity << std::endl;
-	std::cout << "Desired Velocity: " << desiredVelocity << std::endl;
-	std::cout << "New Velocity using PID Controller is: "
-			<< pid->compute(actualVelocity, desiredVelocity);
-	return 0;
+    std::shared_ptr<PidController> pid(new PidController);
+    pid->set();
+    double actualVelocity = 40.0;
+    double desiredVelocity = 50.0;
+    if (actualVelocity > 0 && desiredVelocity > 0) {
+      /// Printing the velocities
+      std::cout << "Current Velocity: " << actualVelocity << std::endl;
+      std::cout << "Desired Velocity: " << desiredVelocity << std::endl;
+      std::cout << "New Velocity using PID Controller is: "
+      << pid->compute(actualVelocity, desiredVelocity)<< std::endl;
+    } else {
+         std::cout << "Velocities cannot be negative.";
+    }
+    return 0;
 }
 

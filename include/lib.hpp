@@ -18,21 +18,22 @@
 
 class PidController {
  public:
-   /**
-   * @brief set - Function which sets the values of kp,kd,ki,dt
-   * @param none
-   * @return none
-   */
-  void set();
-  /**
-   * @brief compute - Function which calculates the new velocity which is closer to the set point velocity
-   * @param actual, a double that stores the actual velocity of the robot
-   * @param set, a double that stores the set point
-   * @return newVelocity
-   */
-  double compute(double actual, double set);
- private:
-  double Kp, Kd, Ki, dt;
-};
+	/**
+	 * @brief set - Function which sets the values of kp,kd,ki,dt
+	 * @param none
+	 * @return none
+	 */
+    void set();
 
+	/**
+	 * @brief compute - Function which calculates the new velocity which is closer to the set point velocity
+	 * @param actual, a double that stores the actual velocity of the robot
+	 * @param set, a double that stores the set point
+	 * @return newVelocity
+	 */
+    double compute(double actual, double set);
+
+ private:
+    double Kp, Kd, Ki, dt;
+};
 

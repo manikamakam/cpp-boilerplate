@@ -8,8 +8,9 @@
  *
  */
 
-#include "lib.hpp"
 #include <math.h>
+#include "lib.hpp"
+
 
 
 /**
@@ -18,10 +19,10 @@
  * @return none
  */
 void PidController::set() {
-	Kp = 0.5;
-	Kd = 0.01;
-	Ki = 0.02;
-	dt = 0.1;
+    Kp = 0.5;
+    Kd = 0.01;
+    Ki = 0.02;
+    dt = 0.1;
 }
 
 
@@ -32,27 +33,38 @@ void PidController::set() {
  * @return newVelocity
  */
 double PidController::compute(double actual, double set) {
-	double error;
-	double previousError = 0;
-	double derivePart = 0;
-	double accumulatedError = 0;
-	double kpPart, kiPart, kdPart;
-	error = set - actual;
+    double error;
 
-	while (fabs(error) > 0.5) {
-		kpPart = error * Kp;
+    /// Calculates the error in velocities
+    error = set - actual;
 
-		accumulatedError += error * dt;
-		kiPart = accumulatedError * Ki;
+    if (actual > 0 && set > 0) {
+      double previousError = 0;
+      double accumulatedError = 0;
 
-		derivePart = (error - previousError) / dt;
-		kdPart = derivePart * Kd;
+      while (fabs(error) > 0.5) {
+        /// proportional part
+        double kpPart = error * Kp;
 
-		previousError = error;
-		actual = kdPart + kiPart + kpPart;
-		error = set - actual;
-	}
+        accumulatedError += error * dt;
+        /// integral part
+        double kiPart = accumulatedError * Ki;
 
-	return actual;
+        double derivePart = (error - previousError) / dt;
+        /// derivative part
+        double kdPart = derivePart * Kd;
+
+        /// storing the error to use in next iteration
+        previousError = error;
+
+        /// calculating the new velocity
+        actual = kdPart + kiPart + kpPart;
+
+        error = set - actual;
+      }
+      return actual;
+    } else {
+       return -1;
+    }
 }
 

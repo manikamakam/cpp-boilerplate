@@ -13,7 +13,8 @@
 #include <iostream>
 #include "lib.hpp"
 
-/** @brief This unit test checks the returned new velocity to be in the desired range.
+/**
+ * @brief This unit test checks the returned new velocity to be in the desired range.
  *        Actual Velocity = 145.0 and Set point velocity = 177.9
  */
 TEST(PidControllerTest, shouldPass) {
@@ -22,7 +23,8 @@ TEST(PidControllerTest, shouldPass) {
   ASSERT_NEAR(177.9, velocityFinal->compute(145.0, 177.9), 0.5);
 }
 
-/** @brief This unit test checks that the retured new velocity is never zero.
+/**
+ * @brief This unit test checks that the retured new velocity is never zero.
  *        Actual Velocity = 3.85 and Set point velocity = 14.98
  */
 TEST(PidControllerTest, shouldPass1) {
