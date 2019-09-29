@@ -7,6 +7,7 @@
  */
 
 #include "lib.hpp"
+#include <math.h>
 
 void PidController::set() {
   Kp = 0.01;
@@ -22,6 +23,17 @@ double PidController::compute(double actual, double set) {
 	double accumulatedError = 0;
 	error = set - actual;
 	int count = 0;
+
+	while (fabs(error)>0.1){
+					double kpPart = error* Kp;
+
+					accumulatedError+=error * dt;
+					double kiPart= accumulatedError*Ki;
+
+
+
+
+		}
 
   return 0;
 }
