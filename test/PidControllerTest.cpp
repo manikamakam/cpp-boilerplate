@@ -4,6 +4,8 @@
 /** @file PidControllerTest.cpp
  *  @brief This file has all the unit tests  to be implemented by the compute method.
  *  @author Part 1: Sri Manika Makam(Driver) Eashwar Sathyamurthy(Navigator)
+ *  @author Part 2: Andre Ferreira(Driver) Nakul Patel(Navigator)
+ *
  */
 
 #include <gtest/gtest.h>

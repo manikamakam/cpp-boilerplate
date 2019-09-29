@@ -4,6 +4,8 @@
 /** @file lib.hpp
  *  @brief This file includes all the required headers and class definitions.
  *  @author Part 1: Sri Manika Makam(Driver) Eashwar Sathyamurthy(Navigator)
+ *  @author Part 2: Andre Ferreira(Driver) Nakul Patel(Navigator)
+ *
  */
 
 #pragma once
@@ -29,7 +31,7 @@ class PidController {
    * @return newVelocity
    */
   double compute(double actual, double set);
- public:
+ private:
   double Kp, Kd, Ki, dt;
 };
 
