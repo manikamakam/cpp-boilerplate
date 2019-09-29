@@ -16,6 +16,13 @@ void PidController::set() {
 }
 
 double PidController::compute(double actual, double set) {
-  return newVelocity;
+	double error;
+	double previousError = 0;
+	double derivePart = 0;
+	double accumulatedError = 0;
+	error = set - actual;
+	int count = 0;
+
+  return 0;
 }
 
