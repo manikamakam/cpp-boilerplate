@@ -10,9 +10,9 @@
 #include <math.h>
 
 void PidController::set() {
-  Kp = 0.01;
-  Kd = 0.2;
-  Ki = 0.1;
+  Kp = 0.5;
+  Kd = 0.01;
+  Ki = 0.02;
   dt = 0.1;
 }
 
@@ -24,17 +24,23 @@ double PidController::compute(double actual, double set) {
 	error = set - actual;
 	int count = 0;
 
-	while (fabs(error)>0.1){
-					double kpPart = error* Kp;
+	while (fabs(error)>0.5){
+		double kpPart = error * Kp;
 
-					accumulatedError+=error * dt;
-					double kiPart= accumulatedError*Ki;
+		accumulatedError += error * dt;
+		double kiPart = accumulatedError * Ki;
 
+		derivePart = (error - previousError) / dt;
+		double kdPart = derivePart * Kd;
 
+		previousError = error;
+		actual = kdPart + kiPart + kpPart;
+		error = set-actual;
 
 
 		}
 
-  return 0;
+
+  return actual ;
 }
 
