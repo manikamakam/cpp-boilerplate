@@ -4,6 +4,7 @@ cppcheck --enable=all --std=c++11 -I include/ --suppress=missingIncludeSystem $(
 
 Output:
 
+
 Checking app/PID-controller.cpp...
 [include/lib.h:13]: (style) The class 'PidController' does not have a constructor.
 1/4 files checked 18% done
@@ -13,4 +14,10 @@ Checking test/PidControllerTest.cpp...
 3/4 files checked 86% done
 Checking test/main.cpp...
 4/4 files checked 100% done
+
+
+
+
+
+
 
