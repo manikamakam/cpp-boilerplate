@@ -22,7 +22,7 @@ Run tests: ./test/cpp-test
 Run program: ./app/shell-app
 ```
 
-## Summary
+## Comments from the part 2 team
 
 Learning the tools Travis and Coveralls was very important for the development of this project. 
 
