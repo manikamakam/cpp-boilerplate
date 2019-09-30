@@ -1,8 +1,7 @@
 # PID-controller
 
 [![Build Status](https://travis-ci.org/manikamakam/PID-controller.svg?branch=master)](https://travis-ci.org/manikamakam/PID-controller)
-[![Coverage Status](https://coveralls.io/repos/github/manikamakam/PID-controller/badge.svg?branch=master)](https://coveralls.io/github/manikamakam/PID-controller?branch=master)
-
+[![Coverage Status](https://coveralls.io/repos/github/manikamakam/PID-controller/badge.svg)](https://coveralls.io/github/manikamakam/PID-controller)
 
 ## Overview
 Part 1: Driver: Sri Manika Makam
