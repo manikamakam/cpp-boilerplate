@@ -12,7 +12,7 @@ Part 2: Driver: Andre Luiz Gomes Ferreira
 	Navigator: Nakul Patel 
 
 ## Standard install via command-line
-
+```
 git clone --recursive https://github.com/manikamakam/PID-controller.git
 cd <path to repository>
 mkdir build
@@ -21,6 +21,7 @@ cmake ..
 make
 Run tests: ./test/cpp-test
 Run program: ./app/shell-app
+```
 
 ## Summary
 
