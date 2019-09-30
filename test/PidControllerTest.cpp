@@ -15,22 +15,25 @@
 
 /**
  * @brief This unit test checks the returned new velocity to be in the desired range.
- *        Actual Velocity = 145.0 and Set point velocity = 177.9
+ *
+ * Actual Velocity = 145.0 and Set point velocity = 177.9
+ *
  */
 TEST(PidControllerTest, shouldPass) {
-  std::shared_ptr < PidController > velocityFinal(new PidController);
-  velocityFinal -> set();
+  std::shared_ptr<PidController> velocityFinal(new PidController);
+  velocityFinal->set();
   ASSERT_NEAR(177.9, velocityFinal->compute(145.0, 177.9), 0.5);
 }
 
 /**
- * @brief This unit test checks that the retured new velocity is never zero.
- *        Actual Velocity = 3.85 and Set point velocity = 14.98
+ * @brief This unit test checks that the returned new velocity is never zero.
+ *
+ * Actual Velocity = 3.85 and Set point velocity = 14.98
+ *
  */
 TEST(PidControllerTest, shouldPass1) {
-  std::shared_ptr < PidController > velocityFinal(new PidController);
-  velocityFinal -> set();
+  std::shared_ptr<PidController> velocityFinal(new PidController);
+  velocityFinal->set();
   ASSERT_TRUE(velocityFinal->compute(3.85, 14.98));
 }
-
 
