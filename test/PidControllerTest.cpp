@@ -9,9 +9,9 @@
  */
 
 #include <gtest/gtest.h>
+#include <PidController.h>
 #include <memory>
 #include <iostream>
-#include "lib.hpp"
 
 /**
  * @brief This unit test checks the returned new velocity to be in the desired range.

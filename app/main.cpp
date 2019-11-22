@@ -7,9 +7,9 @@
  *  @author Part 2: Andre Ferreira(Driver) Nakul Patel(Navigator)
  */
 
+#include <PidController.h>
 #include <iostream>
 #include <memory>
-#include "lib.hpp"
 
 /**
  * @brief Main function

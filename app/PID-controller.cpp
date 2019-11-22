@@ -8,7 +8,7 @@
  */
 
 #include <math.h>
-#include "lib.hpp"
+#include <PidController.h>
 
 PidController::PidController()
     : kp(0),

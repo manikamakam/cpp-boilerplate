@@ -1,8 +1,8 @@
 /**
- * @file virtualPID.h
- * @author Sri Manika Makam
+ * @file      virtualPID.h
+ * @author    Sri Manika Makam
  * @copyright MIT License
- * @brief Header file for defining the virtual class used for abstraction and implementation of PID
+ * @brief     Header file for defining the virtual class used for abstraction and implementation of PID
  */
 
 /**
@@ -37,7 +37,7 @@
 
 /**
  * @brief virtualPID Class
- * Base class from which PID class is derived
+ * Base class from which PidController class is derived
  */
 
 class virtualPID {
@@ -73,7 +73,7 @@ class virtualPID {
    * @param actual
    * @param set
    * @return double
-   * Virtual function which is derived by PID class
+   * Virtual function which is derived by PidController class
    */
   virtual double compute(double actual, double set) =0;
 
