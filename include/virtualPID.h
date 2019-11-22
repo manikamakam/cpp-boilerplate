@@ -86,7 +86,7 @@ class virtualPID {
   virtual bool setKp(double kp);
 
   /**
-   * @brief virtual 'setKi' method
+   * @brief Virtual 'setKi' method
    * @param ki of type double
    * @return boolean
    * Function to set the ki value
@@ -94,12 +94,12 @@ class virtualPID {
   virtual bool setKi(double ki);
 
   /**
-   * @brief virtual 'setKd' method
+   * @brief Virtual 'setKd' method
    * @param kd of type double
    * @return boolean
    * Function to set the kd value
    */
-  virtual bool setKD(double kd);
+  virtual bool setKd(double kd);
 };
 
 #endif /* INCLUDE_VIRTUALPID_H_ */
