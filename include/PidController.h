@@ -2,7 +2,7 @@
  *  @file      PidController.h
  *  @author    Sri Manika Makam
  *  @copyright MIT License
- *  @brief     Header file for defining the PID class
+ *  @brief     Header file for defining the PidController class
  */
 
 /**
@@ -34,6 +34,7 @@
 #define INCLUDE_PIDCONTROLLER_H_
 
 #include <iostream>
+#include "math.h"
 #include "virtualPID.h"
 
 /**
@@ -62,28 +63,28 @@ class PidController : public virtualPID {
   PidController(double kp, double kd, double ki, double dt);
 
   /**
-   * @brief getKp function
+   * @brief getKP function
    * @param none
    * @return kp gain of type double
    * Returns the kp gain upon request
    */
-  double getKp();
+  double getKP();
 
   /**
-   * @brief getKd function
+   * @brief getKD function
    * @param none
    * @return kd gain of type double
    * Returns the kd gain upon request
    */
-  double getKd();
+  double getKD();
 
   /**
-   * @brief getKi function
+   * @brief getKI function
    * @param none
    * @return ki gain of type double
    * Returns the ki gain upon request
    */
-  double getKi();
+  double getKI();
 
   /**
    * @brief compute - Function which calculates the new velocity which is closer to the set point velocity
