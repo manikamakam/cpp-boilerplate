@@ -40,9 +40,11 @@
  * @param none
  * @return 0
  */
+
 int main() {
   // Creating object for PidController class
   PidController pid;
+
   // Point the virtual class object to the PidController class
   std::unique_ptr<virtualPID> vpid = std::make_unique<PidController>();
 
@@ -58,14 +60,15 @@ int main() {
   std::cin >> actualVelocity;
 
   // Set the PID gains
-  vpid->setKP(2);
-  vpid->setKI(0.1);
-  vpid->setKD(1);
+  vpid->setKP(0.5);
+  vpid->setKI(0.02);
+  vpid->setKD(0.01);
 
   if (actualVelocity > 0 && desiredVelocity > 0) {
-    /// Printing the velocities
+    // Printing the velocities
     std::cout << "Current Velocity: " << actualVelocity << std::endl;
     std::cout << "Desired Velocity: " << desiredVelocity << std::endl;
+    // Calculating the new velocity
     std::cout << "New Velocity using PID Controller is: "
               << pid.compute(actualVelocity, desiredVelocity) << std::endl;
   } else {
