@@ -36,10 +36,10 @@
 #include "math.h"
 
 PidController::PidController() {
-  kP = 2;
-  kD = 1;
-  kI = 0.2;
-  dT = 0.4;
+  kP = 0.5;
+  kD = 0.01;
+  kI = 0.02;
+  dT = 0.1;
 }
 PidController::PidController(double kp, double kd, double ki, double dt) {
   kP = kp;
