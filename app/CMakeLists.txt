@@ -1,5 +1,4 @@
-add_executable(shell-app main.cpp PID-controller.cpp)
+add_executable(Pid-app main.cpp PidController.cpp virtualPID.cpp)
 include_directories(
     ${CMAKE_SOURCE_DIR}/include
-    ${CMAKE_SOURCE_DIR}/app
 )
