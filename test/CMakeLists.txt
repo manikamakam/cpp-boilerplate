@@ -6,7 +6,7 @@ add_executable(
     mockvirtualPID.h
     gmockStatic.h
     PidControllerTest.cpp
-    ../app/PID-controller.cpp
+    ../app/PidController.cpp
     ../app/virtualPID.cpp
 )
 
