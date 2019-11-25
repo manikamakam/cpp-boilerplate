@@ -62,7 +62,7 @@ Run program: ./app/Pid-app
 
 ## Working with Eclipse IDE
 
-Installation
+## Installation
 
 In your Eclipse workspace directory (or create a new one), checkout the repo (and submodules)
 
@@ -81,20 +81,20 @@ cd PID-eclipse
 cmake -G "Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug -D CMAKE_ECLIPSE_VERSION=4.7.0 -D CMAKE_CXX_COMPILER_ARG1=-std=c++14 ../PID-controller/
 ```
 
-Import
+## Import
 
 Open Eclipse, go to File -> Import -> General -> Existing Projects into Workspace -> Select "PID-eclipse" directory created previously as root directory -> Finish
 
-Edit
+## Edit
 
 Source files may be edited under the "[Source Directory]" label in the Project Explorer.
 
-Build
+## Build
 
 To build the project, in Eclipse, unfold PID-eclipse project in Project Explorer, unfold Build Targets, double click on "all" to build all projects.
 
-Run
+## Run
 
 In Eclipse, right click on the PID-eclipse in Project Explorer, select Run As -> Local C/C++ Application
 
-Choose the binaries to run (e.g. shell-app, cpp-test for unit testing)
+Choose the binaries to run (e.g. Pid-app, cpp-test for unit testing)
