@@ -65,24 +65,24 @@ class PidController : public virtualPID {
   /**
    * @brief getKP function
    * @param none
-   * @return kp gain of type double
-   * Returns the kp gain upon request
+   * @return kP gain of type double
+   * Returns the kP gain upon request
    */
   double getKP();
 
   /**
    * @brief getKD function
    * @param none
-   * @return kd gain of type double
-   * Returns the kd gain upon request
+   * @return kD gain of type double
+   * Returns the kD gain upon request
    */
   double getKD();
 
   /**
    * @brief getKI function
    * @param none
-   * @return ki gain of type double
-   * Returns the ki gain upon request
+   * @return kI gain of type double
+   * Returns the kI gain upon request
    */
   double getKI();
 

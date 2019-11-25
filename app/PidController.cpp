@@ -75,15 +75,15 @@ double PidController::compute(double actual, double set) {
 
     while (fabs(error) > 0.5) {
       /// Calculating output from proportional part
-      double kpPart = error * kp;
+      double kpPart = error * kP;
 
-      accumulatedError += error * dt;
+      accumulatedError += error * dT;
       /// Calculating output from integral part
-      double kiPart = accumulatedError * ki;
+      double kiPart = accumulatedError * kI;
 
-      double derivePart = (error - previousError) / dt;
+      double derivePart = (error - previousError) / dT;
       /// Calculating output from derivative part
-      double kdPart = derivePart * kd;
+      double kdPart = derivePart * kD;
 
       /// Storing the error to use in next iteration
       previousError = error;
@@ -98,4 +98,3 @@ double PidController::compute(double actual, double set) {
     return -1;
   }
 }
-

@@ -43,13 +43,13 @@
 class virtualPID {
  protected:
   // Variable to store proportional gain
-  double kp;
+  double kP;
   // Variable to store derivative gain
-  double kd;
+  double kD;
   // Variable to store integral gain
-  double ki;
+  double kI;
   // Variable to store time interval
-  double dt;
+  double dT;
 
  public:
   /**
@@ -78,28 +78,28 @@ class virtualPID {
   virtual double compute(double actual, double set) =0;
 
   /**
-   * @brief Virtual 'setKp' method
+   * @brief Virtual 'setKP' method
    * @param kp of type double
    * @return boolean
    * Function to set the kp value
    */
-  virtual bool setKp(double kp);
+  virtual bool setKP(double kp);
 
   /**
-   * @brief Virtual 'setKi' method
+   * @brief Virtual 'setKI' method
    * @param ki of type double
    * @return boolean
    * Function to set the ki value
    */
-  virtual bool setKi(double ki);
+  virtual bool setKI(double ki);
 
   /**
-   * @brief Virtual 'setKd' method
+   * @brief Virtual 'setKD' method
    * @param kd of type double
    * @return boolean
    * Function to set the kd value
    */
-  virtual bool setKd(double kd);
+  virtual bool setKD(double kd);
 };
 
 #endif /* INCLUDE_VIRTUALPID_H_ */
