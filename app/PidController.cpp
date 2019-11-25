@@ -31,9 +31,10 @@
  */
 
 #include <iostream>
+#include <cmath>
 #include "PidController.h"
 #include "virtualPID.h"
-#include "math.h"
+
 
 PidController::PidController() {
   kP = 0.5;

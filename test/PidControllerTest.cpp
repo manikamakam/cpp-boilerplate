@@ -114,7 +114,6 @@ TEST(gmockStatic, computeTest) {
  *@return none
  */
 TEST(PIDtest, getGainsTest) {
-
   // KP, KD, KI, dT
   PidController pid(0.5, 0.01, 0.02, 0.1);
 
