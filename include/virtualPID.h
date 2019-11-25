@@ -81,7 +81,7 @@ class virtualPID {
    * @brief Virtual 'setKP' method
    * @param kp of type double
    * @return boolean
-   * Function to set the kp value
+   * Function to set the kP value
    */
   virtual bool setKP(double kp);
 
@@ -89,7 +89,7 @@ class virtualPID {
    * @brief Virtual 'setKI' method
    * @param ki of type double
    * @return boolean
-   * Function to set the ki value
+   * Function to set the kI value
    */
   virtual bool setKI(double ki);
 
@@ -97,7 +97,7 @@ class virtualPID {
    * @brief Virtual 'setKD' method
    * @param kd of type double
    * @return boolean
-   * Function to set the kd value
+   * Function to set the kD value
    */
   virtual bool setKD(double kd);
 };
